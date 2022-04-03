@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+width: 100vw;
+height: 100vh;
+padding: 20px 20px 20px 20px;
+background-color: rgb(243 114 22);
+opacity: 1;
+}
+header{
+}
+li{
+    list-style: none;
+    padding: 10px;
+    border: 1px solid slateblue;
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+li:hover{
+    background-color: slateblue;
+    transform: scale(1.05);
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
