@@ -1,0 +1,39 @@
+span{
+    margin: 20px;
+}
+.f1{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.f2{
+    background-color: brown;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.f3{
+    background-color: violet;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.f4{
+    background-color: khaki;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.f5{
+    background-color: darkcyan;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.f6{
+    background-color: chocolate;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
