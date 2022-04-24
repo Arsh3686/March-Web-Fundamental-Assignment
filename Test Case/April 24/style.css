@@ -5,12 +5,12 @@ body{
     background-color: cyan;
 }
 .container{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: grid;
     grid-template-columns: repeat(auto-fit,250px);
     gap: 20px;
     justify-content: center;
-    align-items: center;
+    
 }
 .detail{
     padding: 20px;

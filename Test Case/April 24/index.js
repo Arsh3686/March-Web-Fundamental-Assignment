@@ -10,7 +10,7 @@ const Display = fetch("https://reqres.in/api/users?page=2")
     <span id="ids">${e.id}</span>
 </div>
 <div class="lower">
-    <h4 id="firstname">${e.first_name} ${e.last_name}</h4>
+    <h4 id="firstname">${e.first_name} <span>${e.last_name}</span></h4>
     <h4 id="lastname">${e.email}</h4>
 </div>
 </div>`;

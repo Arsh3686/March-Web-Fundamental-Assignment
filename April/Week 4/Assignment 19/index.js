@@ -28,54 +28,47 @@ const reviews = [
 		text: "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
 	},
 ];
+window.addEventListener("load", () => {
+	alert(
+		`😄😄Welcome to the Testimonials section which we say as ✌️ "Our Reviews" 😄😄`
+	);
+});
+const img = document.querySelector("#images");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+const surpriseme = document.getElementById("surpriseme");
+const name = document.getElementById("name");
+const job = document.getElementById("job");
+const text = document.getElementById("text");
 
-let indexToBeDisplayed = 0;
-
-const currentElement = reviews[indexToBeDisplayed];
-
-const imageElement = document.querySelector("#image");
-const nameElement = document.querySelector(".name");
-const jobElement = document.querySelector(".job");
-const textElement = document.querySelector(".text");
-
-const nextBtn = document.querySelector("#next");
-const prevBtn = document.querySelector("#prev");
-const randomBtn = document.querySelector("#random");
-
-nextBtn.addEventListener("click", displayNext);
-prevBtn.addEventListener("click", displayPrev);
-
-randomBtn.addEventListener("click", displayRandom);
-
-function displayNext() {
-	if (indexToBeDisplayed === reviews.length - 1) {
-		indexToBeDisplayed = 0;
+let index = 0;
+next.addEventListener("click", () => {
+	if (index === reviews.length - 1) {
+		index = 0;
 	} else {
-		indexToBeDisplayed++;
+		index++;
 	}
-	console.log(indexToBeDisplayed);
-	updateScreen(reviews[indexToBeDisplayed]);
-}
-
-function displayPrev() {
-	if (indexToBeDisplayed === 0) {
-		indexToBeDisplayed = reviews.length - 1;
+	console.log(index);
+	display(reviews[index]);
+});
+prev.addEventListener("click", () => {
+	if (index === 0) {
+		index = reviews.length - 1;
 	} else {
-		indexToBeDisplayed--;
+		index--;
 	}
-	console.log(indexToBeDisplayed);
-	updateScreen(reviews[indexToBeDisplayed]);
-}
+	console.log(index);
+	display(reviews[index]);
+});
 
-function displayRandom() {
-	console.log("display random user details");
-}
-
-function updateScreen(virat) {
-	nameElement.innerText = virat.name;
-	jobElement.innerText = virat.job;
-	textElement.innerText = virat.text;
-	imageElement.src = virat.img;
-}
-
-updateScreen(currentElement);
+const displayrandom = () => {
+	console.log();
+	display(reviews[Math.floor(Math.random() * 4)]);
+};
+surpriseme.addEventListener("click", displayrandom);
+const display = (ele) => {
+	img.src = ele.img;
+	text.innerText = ele.text;
+	name.innerText = ele.name;
+	job.innerText = ele.job;
+};
