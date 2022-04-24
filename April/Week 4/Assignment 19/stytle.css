@@ -83,3 +83,21 @@ button{
 button:hover{
     transform: scale(1.05);
 }
+@media (max-width:520px) {
+    
+    .reviews{
+        padding: 40px;
+        width:200px;
+    }
+    #review:after{
+        left: 83px;
+    }
+}
+/* @media (max-width:768px) {
+    .reviews{
+        width:350px;
+    }
+    #review:after{
+        left: 130px;
+    }
+} */
