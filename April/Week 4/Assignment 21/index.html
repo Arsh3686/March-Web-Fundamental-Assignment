@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="index.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>Recipe App</title>
+	</head>
+	<body>
+		<section id="mview">
+			<div class="fmobile" id="mmodel">
+				<span id="upperpart">
+					<h5 id="time">9:10</h5>
+					<h5 id="battery">58%</h5>
+				</span>
+				<main class="main">
+					<h3 class="title">Recipe App</h3>
+					<input
+						type="text"
+						id="getinput"
+						placeholder="           Search recipe"
+					/>
+					<!-- <hr />. -->
+					<input
+						id="search"
+						type="submit"
+						onclick="GetData()"
+						value="Search"
+					/>
+				</main>
+			</div>
+			<div class="smobile" id="tablet">
+				<span id="tupperpart">
+					<h5 id="ttime">9:10</h5>
+					<h5 id="tbattery">58%</h5>
+				</span>
+				<div class="containerCollector">
+					<div class="container scroll" id="getp"></div>
+					<div class="lines">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <input type="text" id="getinput" />
+		<input type="button" id="clickbtn" onclick="GetData()" value="Add" />
+		<section>
+			<p id="getp"></p>
+		</section> -->
+	</body>
+</html>
